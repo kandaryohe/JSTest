@@ -22,6 +22,9 @@
  * @return {string}
  */
 
-export const createUserActionString = (object) => {
+const createUserActionString = (userName, action) => {
   //ここに記述
+  return `${userName}さんが${action}しました`;
 };
+const obj = createUserActionString("田中", "挨拶");
+console.log(obj);
