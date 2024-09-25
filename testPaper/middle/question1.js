@@ -22,7 +22,7 @@
  * @return {string}
  */
 
-const createUserActionString = (userName, action) => {
+export const createUserActionString = (userName, action) => {
   //ここに記述
   return `${userName}さんが${action}しました`;
 };

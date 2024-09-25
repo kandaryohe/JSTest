@@ -20,6 +20,8 @@
  *  @return {number}
  */
 
-export const priceCalculator = (price, isTakeOut) => {
+export const priceCalculator = (price) => {
   //ここを記述
+  return price * 1.1;
 };
+const isTakeOut = priceCalculator(100);
