@@ -22,9 +22,16 @@
  * @return {string}
  */
 
-export const createUserActionString = (userName, action) => {
+export const createUserActionString = (object) => {
   //ここに記述
-  return `${userName}さんが${action}しました`;
+
+  let userName = "名無し";
+  let action = "何もしませんでした";
+  if (object.userName) {
+    userName = object.userName;
+  }
+  if (object.action) {
+    action = `${object.action}しました。`;
+  }
+  return `${userName}さんが${action}`;
 };
-const obj = createUserActionString("田中", "挨拶");
-console.log(obj);

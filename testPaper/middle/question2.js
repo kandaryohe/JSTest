@@ -20,8 +20,11 @@
  *  @return {number}
  */
 
-export const priceCalculator = (price) => {
+export const priceCalculator = (price, isTakeOut) => {
   //ここを記述
-  return price * 1.1;
+  if (isTakeOut) {
+    return Math.floor(price * 1.08);
+  } else {
+    return Math.floor(isTakeOut * 1.1);
+  }
 };
-const isTakeOut = priceCalculator(100);
