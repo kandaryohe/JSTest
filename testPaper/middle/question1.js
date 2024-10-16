@@ -21,7 +21,6 @@
  * @param {{userName?:string,action?:string}} object
  * @return {string}
  */
-
 export const createUserActionString = (object) => {
   //ここに記述
 
