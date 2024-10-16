@@ -21,7 +21,16 @@
  * @param {{userName?:string,action?:string}} object
  * @return {string}
  */
-
 export const createUserActionString = (object) => {
   //ここに記述
+
+  let userName = "名無し";
+  let action = "何もしませんでした";
+  if (object.userName) {
+    userName = object.userName;
+  }
+  if (object.action) {
+    action = `${object.action}しました。`;
+  }
+  return `${userName}さんが${action}`;
 };
