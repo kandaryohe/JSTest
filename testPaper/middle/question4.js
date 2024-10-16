@@ -16,6 +16,6 @@
  * @param {string|number} ele
  *  @return {(string|number)[]}
  */
-const toggleArrayElement = (array, ele) => {
+export const toggleArrayElement = (array, ele) => {
   //ここに記述
 };
